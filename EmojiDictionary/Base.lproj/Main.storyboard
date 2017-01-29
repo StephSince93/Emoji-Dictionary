@@ -42,5 +42,50 @@
             </objects>
             <point key="canvasLocation" x="-38" y="132"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wW8-Y0-xTK">
+            <objects>
+                <viewController id="z4g-JB-bCX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dvb-Jo-5PM"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6g-kA-WPH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nqU-Ku-neo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pqG-z8-3U9">
+                                <rect key="frame" x="79" y="104" width="218" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="⛪️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJr-6K-16v">
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="239"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxH-bU-8cs">
+                                <rect key="frame" x="104" y="409" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KxH-bU-8cs" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" constant="63" id="L4r-cl-cw9"/>
+                            <constraint firstItem="KxH-bU-8cs" firstAttribute="top" secondItem="zJr-6K-16v" secondAttribute="bottom" constant="50" id="aJn-Ae-thr"/>
+                            <constraint firstItem="KxH-bU-8cs" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" constant="63" id="k6u-CM-CTX"/>
+                            <constraint firstItem="KxH-bU-8cs" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" constant="63" id="rlV-cK-s53"/>
+                            <constraint firstItem="KxH-bU-8cs" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" id="sjH-gG-4hB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeW-rt-gIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="132"/>
+        </scene>
     </scenes>
 </document>
