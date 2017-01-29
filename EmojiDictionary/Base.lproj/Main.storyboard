@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="815" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Subclass View Controller-->
         <scene sceneID="wW8-Y0-xTK">
             <objects>
-                <viewController id="z4g-JB-bCX" sceneMemberID="viewController">
+                <viewController id="z4g-JB-bCX" customClass="SubclassViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dvb-Jo-5PM"/>
                         <viewControllerLayoutGuide type="bottom" id="l6g-kA-WPH"/>
