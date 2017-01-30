@@ -56,24 +56,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⛪️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJr-6K-16v">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="⛪️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJr-6K-16v">
                                 <rect key="frame" x="79" y="104" width="218" height="239"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxH-bU-8cs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxH-bU-8cs">
                                 <rect key="frame" x="104" y="414" width="169" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbE-x0-FT6">
+                                <rect key="frame" x="103" y="443" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itL-6G-XjG">
+                                <rect key="frame" x="103" y="472" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zJr-6K-16v" firstAttribute="top" secondItem="Dvb-Jo-5PM" secondAttribute="bottom" constant="70" id="67e-TJ-ZRz"/>
+                            <constraint firstItem="itL-6G-XjG" firstAttribute="top" secondItem="FbE-x0-FT6" secondAttribute="bottom" constant="20" id="Jms-J1-YzK"/>
+                            <constraint firstItem="FbE-x0-FT6" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" id="KMk-AT-YJL"/>
+                            <constraint firstItem="FbE-x0-FT6" firstAttribute="top" secondItem="KxH-bU-8cs" secondAttribute="bottom" constant="20" id="XCR-GB-qfW"/>
+                            <constraint firstItem="KxH-bU-8cs" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" id="YLs-Ou-WWp"/>
+                            <constraint firstItem="zJr-6K-16v" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" id="hGz-wU-x2Z"/>
+                            <constraint firstItem="KxH-bU-8cs" firstAttribute="top" secondItem="zJr-6K-16v" secondAttribute="bottom" constant="60" id="mhx-eF-Ntx"/>
+                            <constraint firstItem="itL-6G-XjG" firstAttribute="centerX" secondItem="nqU-Ku-neo" secondAttribute="centerX" id="sDO-Sh-olr"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="itL-6G-XjG" id="5k2-4H-JAw"/>
+                        <outlet property="categoryLabel" destination="FbE-x0-FT6" id="jdQ-ZL-X3c"/>
                         <outlet property="definitionLabel" destination="KxH-bU-8cs" id="Az0-z4-j3w"/>
                         <outlet property="emojiLabel" destination="zJr-6K-16v" id="7Iw-d7-hoc"/>
                     </connections>
